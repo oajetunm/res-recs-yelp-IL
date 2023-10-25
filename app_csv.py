@@ -27,9 +27,9 @@ from langchain.chat_models import ChatOpenAI
 from llama_index.callbacks.base import CallbackManager
 
 
-os.environ['REPLICATE_API_TOKEN'] = "r8_CfOUSC15HTrlWRFlq5zC16OPxnqWQfb1UsNmZ"
+os.environ['REPLICATE_API_TOKEN'] = ""
 
-pinecone.init(api_key='5910be35-2c8c-49c0-9e2e-0208a62e9120', environment='gcp-starter')
+pinecone.init(api_key='', environment='gcp-starter')
 
 loader = CSVLoader(file_path="./data/yelp_IL.csv",csv_args = {
                 "delimiter": ','}, encoding="utf8")
